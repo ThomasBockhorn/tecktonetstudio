@@ -25,7 +25,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        $this->authorize('create', Project::class);
     }
 
     /**
@@ -36,7 +36,7 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request)
     {
-        //
+        $this->authorize('store', Project::class);
     }
 
     /**
@@ -58,7 +58,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        $this->authorize('edit', $project);
     }
 
     /**
@@ -70,7 +70,7 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        //
+        $this->authorize('update', $project);
     }
 
     /**
@@ -81,6 +81,6 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        $this->authorize('destroy', $project);
     }
 }
