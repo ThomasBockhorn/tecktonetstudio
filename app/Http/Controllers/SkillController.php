@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Skill;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Inertia\Response;
+
 
 class SkillController extends Controller
 {
@@ -12,9 +15,11 @@ class SkillController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): Response
     {
-        //
+        $skills = Skill::all();
+
+        return Inertia::render('Skills/index',compact('skills'));
     }
 
     /**
