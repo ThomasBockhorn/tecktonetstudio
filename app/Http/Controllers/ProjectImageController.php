@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProjectImageRequest;
 use App\Http\Requests\UpdateProjectImageRequest;
 use App\Models\ProjectImage;
+use Inertia\Inertia;
+use Inertia\Response;
 
 class ProjectImageController extends Controller
 {
@@ -13,9 +15,11 @@ class ProjectImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): Response
     {
-        //
+        $projectImages = ProjectImage::all();
+
+        return Inertia::render('Project-Images/index', compact('projectImages'));
     }
 
     /**

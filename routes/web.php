@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
     Route::patch('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
     Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/project-images', [ProjectImageController::class, 'index'])->name('project-images.index');
+    Route::get('/project-images/create', [ProjectImageController::class, 'create'])->name('project-images.create');
+    Route::post('/project-images', [ProjectImageController::class, 'store'])->name('project-images.store');
+    Route::get('/project-images/{projectImage}/edit', [ProjectImageController::class, 'edit'])->name('project-images.edit');
+    Route::patch('/project-images/{projectImage}', [ProjectImageController::class, 'update'])->name('project-images.update');
+    Route::delete('/project-images/{projectImage}', [ProjectImageController::class, 'destroy'])->name('project-images.destroy');
 });
 
 Route::middleware('auth')->group(function () {

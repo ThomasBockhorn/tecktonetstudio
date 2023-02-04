@@ -51,6 +51,12 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Projects
                                 </NavLink>
+                                <NavLink
+                                    :href="route('project-images.index')"
+                                    :active="route().current('project-images')"
+                                >
+                                    Project Images
+                                </NavLink>
                             </div>
                         </div>
 
