@@ -25,7 +25,7 @@ class ProjectImageController extends Controller
      */
     public function create()
     {
-        $this->authorize('create', ProjectImage::class);
+
     }
 
     /**
@@ -36,7 +36,7 @@ class ProjectImageController extends Controller
      */
     public function store(StoreProjectImageRequest $request)
     {
-        $this->authorize('store', ProjectImage::class);
+
     }
 
     /**
@@ -58,7 +58,7 @@ class ProjectImageController extends Controller
      */
     public function edit(ProjectImage $projectImage)
     {
-        $this->authorize('edit', $projectImage);
+
     }
 
     /**
@@ -70,7 +70,7 @@ class ProjectImageController extends Controller
      */
     public function update(UpdateProjectImageRequest $request, ProjectImage $projectImage)
     {
-        $this->authorize('update', $projectImage);
+
     }
 
     /**
@@ -81,6 +81,6 @@ class ProjectImageController extends Controller
      */
     public function destroy(ProjectImage $projectImage)
     {
-        $this->authorize('destroy', $projectImage);
+
     }
 }
