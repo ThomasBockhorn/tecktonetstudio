@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\ProjectImage::factory()->count(10)->create();
-        \App\Models\Role::factory()->count(10)->create();
+        \App\Models\Project::factory()->count(10)->create();
+        \App\Models\Skill::factory()->count(10)->create();
     }
 }
