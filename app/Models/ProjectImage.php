@@ -14,4 +14,13 @@ class ProjectImage extends Model
         'image',
         'alt',
     ];
+
+    /**
+     * The project image belongs to a project
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function project(){
+        return $this->belongsTo(Project::class);
+    }
 }

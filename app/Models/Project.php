@@ -15,4 +15,13 @@ class Project extends Model
         'project_category',
         'client_name',
     ];
+
+    /**
+     * The project has one project image
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function projectImage(){
+        return $this->hasOne(ProjectImage::class);
+    }
 }
