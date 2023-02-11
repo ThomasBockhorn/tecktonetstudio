@@ -31,7 +31,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
-import BackendSkillsTable from "@/Components/Backend_ui/BackendSkillsTable.vue";
+import BackendSkillsTable from "@/Components/BackendTables/BackendSkillsTable.vue";
 
 export default {
     components: {

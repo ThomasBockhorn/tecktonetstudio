@@ -1,21 +1,14 @@
 <template>
     <div class="flex justify-center">
         <table class="mt-5 border-separate border-spacing-6">
-            <thead>
-                <tr>
-                    <th colspan="4">
-                        <h2>Skills</h2>
-                    </th>
-                </tr>
-            </thead>
             <tbody>
                 <template v-for="item in data" :key="item.id">
                     <tr>
-                        <td>{{ item.id }}</td>
-                        <td>{{ item.skill }}</td>
-                        <td>{{ item.level }}</td>
-                        <td><Link>Edit</Link></td>
-                        <td><Link>Delete</Link></td>
+                        <td class="pt-2">{{ item.id }}</td>
+                        <td class="pt-2">{{ item.skill }}</td>
+                        <td class="pt-2">{{ item.level }}</td>
+                        <td><NavigationLink>Edit</NavigationLink></td>
+                        <td><NavigationLink>Delete</NavigationLink></td>
                     </tr>
                 </template>
             </tbody>
@@ -25,10 +18,12 @@
 
 <script>
 import { Link } from "@inertiajs/vue3";
+import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
 
 export default {
     components: {
         Link,
+        NavigationLink,
     },
     props: {
         data: Object,
