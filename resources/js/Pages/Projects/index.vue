@@ -18,15 +18,9 @@
                     <div class="p-6 text-gray-900 dark:text-gray-100">
                         Projects
 
-                        <div class="mt-4">
-                            <Link
-                                :href="route('projects.create')"
-                                active="true"
-                                class="inline-flex items-center px-4 py-2 m-2 bg-gray-800 border border-white rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
-                            >
-                                Create Project
-                            </Link>
-                        </div>
+                        <NavigationLink :href="route('projects.create')"
+                            >Create A Project</NavigationLink
+                        >
                     </div>
                 </div>
             </div>
@@ -37,12 +31,13 @@
 <script>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
+import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
 
 export default {
     components: {
         AuthenticatedLayout,
         Head,
-        Link,
+        NavigationLink,
     },
 };
 </script>
