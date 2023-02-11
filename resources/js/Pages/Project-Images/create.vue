@@ -1,12 +1,12 @@
 <template>
-    <Head title="Project Images" />
+    <Head title="Create Project Images" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2
                 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"
             >
-                Project Images
+                Create Project Images
             </h2>
         </template>
 
@@ -20,11 +20,11 @@
 
                         <div class="mt-4">
                             <Link
-                                :href="route('project-images.create')"
+                                :href="route('project-images.index')"
                                 active="true"
                                 class="inline-flex items-center px-4 py-2 m-2 bg-gray-800 border border-white rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
                             >
-                                Create Project Image
+                                Back to Project Images
                             </Link>
                         </div>
                     </div>
