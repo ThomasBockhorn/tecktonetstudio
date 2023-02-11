@@ -16,8 +16,7 @@
                     class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
                 >
                     <div class="p-6 text-gray-900 dark:text-gray-100">
-                        Skills
-
+                        <BackendSkillsTable :data="skills" />
                         <NavigationLink :href="route('skills.create')"
                             >Create a Skill</NavigationLink
                         >
@@ -32,12 +31,17 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
+import BackendSkillsTable from "@/Components/Backend_ui/BackendSkillsTable.vue";
 
 export default {
     components: {
         AuthenticatedLayout,
         Head,
         NavigationLink,
+        BackendSkillsTable,
+    },
+    props: {
+        skills: Object,
     },
 };
 </script>

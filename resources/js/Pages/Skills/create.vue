@@ -30,7 +30,7 @@
 
 <script>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import { Head, Link } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
 
 export default {

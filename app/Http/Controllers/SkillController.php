@@ -6,6 +6,7 @@ use App\Models\Skill;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
+use App\Http\Requests\StoreSkillRequest;
 
 
 class SkillController extends Controller
@@ -35,12 +36,14 @@ class SkillController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  StoreSkillRequest Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreSkillRequest $request): Response
     {
-        //
+        $skill = Skill::create($request);
+
+        return Inertia::render('Skills/index',compact('skill'));
     }
 
     /**
