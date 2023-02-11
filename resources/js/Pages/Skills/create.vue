@@ -1,12 +1,12 @@
 <template>
-    <Head title="Skills" />
+    <Head title="Create a Skill" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2
                 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"
             >
-                Skills
+                Create a Skill
             </h2>
         </template>
 
@@ -16,15 +16,15 @@
                     class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
                 >
                     <div class="p-6 text-gray-900 dark:text-gray-100">
-                        Skills
+                        Create a Skill
 
                         <div class="mt-4">
                             <Link
-                                :href="route('skills.create')"
+                                :href="route('skills.index')"
                                 active="true"
                                 class="inline-flex items-center px-4 py-2 m-2 bg-gray-800 border border-white rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
                             >
-                                Create a Skill
+                                Back to Skills
                             </Link>
                         </div>
                     </div>

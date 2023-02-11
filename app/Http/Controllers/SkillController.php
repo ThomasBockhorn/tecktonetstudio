@@ -27,9 +27,9 @@ class SkillController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): Response
     {
-        //
+        return Inertia::render('Skills/create');
     }
 
     /**
