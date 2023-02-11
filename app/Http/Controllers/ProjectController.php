@@ -27,9 +27,9 @@ class ProjectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): Response
     {
-        $this->authorize('create', Project::class);
+        return Inertia::render('Projects/create');
     }
 
     /**
@@ -40,7 +40,9 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request)
     {
+        $project = Project::create($request);
 
+        return redirect()->route('projects.index');
     }
 
     /**
