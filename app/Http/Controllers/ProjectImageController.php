@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreProjectImageRequest;
 use App\Http\Requests\UpdateProjectImageRequest;
+use Illuminate\Http\Request;
 use App\Models\ProjectImage;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -46,12 +47,14 @@ class ProjectImageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProjectImage  $projectImage
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectImage $projectImage)
+    public function show(Request $request): Response
     {
-        //
+        $projectImage = ProjectImage::find($request->id);
+
+        return Inertia::render('Project-images/show', compact('projectImage'));
     }
 
     /**

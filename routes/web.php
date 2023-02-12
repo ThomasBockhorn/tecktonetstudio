@@ -39,6 +39,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/skills/{skill}/edit', [SkillController::class, 'edit'])->name('skills.edit');
     Route::patch('/skills/{skill}', [SkillController::class, 'update'])->name('skills.update');
     Route::delete('/skills/{skill}', [SkillController::class, 'destroy'])->name('skills.destroy');
+    Route::get('/skills/{skill}', [SkillController::class, 'show'])->name('skills.show');
 });
 
 Route::middleware('auth')->group(function () {
@@ -48,6 +49,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
     Route::patch('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
     Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
+    Route::get('/projects/{project}', [ProjectController::class, 'show'])->name('projects.show');
 });
 
 Route::middleware('auth')->group(function () {
@@ -57,6 +59,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/project-images/{projectImage}/edit', [ProjectImageController::class, 'edit'])->name('project-images.edit');
     Route::patch('/project-images/{projectImage}', [ProjectImageController::class, 'update'])->name('project-images.update');
     Route::delete('/project-images/{projectImage}', [ProjectImageController::class, 'destroy'])->name('project-images.destroy');
+    Route::get('/project-images/{projectImage}', [ProjectImageController::class, 'show'])->name('project-images.show');
 });
 
 Route::middleware('auth')->group(function () {

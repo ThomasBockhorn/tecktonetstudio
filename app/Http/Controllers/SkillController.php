@@ -49,12 +49,14 @@ class SkillController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Skill  $skill
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show(Skill $skill)
+    public function show(Request $request): Response
     {
-        //
+        $skill = Skill::find($request->id);
+
+        return Inertia::render('Skills/show',compact('skill'));
     }
 
     /**
