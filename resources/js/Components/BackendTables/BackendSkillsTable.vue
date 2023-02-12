@@ -7,7 +7,12 @@
                         <td class="pt-2">{{ item.id }}</td>
                         <td class="pt-2">{{ item.skill }}</td>
                         <td class="pt-2">{{ item.level }}</td>
-                        <td><NavigationLink>Edit</NavigationLink></td>
+                        <td>
+                            <NavigationLink
+                                :href="route('skills.edit', item.id)"
+                                >Edit</NavigationLink
+                            >
+                        </td>
                         <td><NavigationLink>Delete</NavigationLink></td>
                     </tr>
                 </template>

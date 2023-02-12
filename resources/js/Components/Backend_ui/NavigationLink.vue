@@ -16,7 +16,9 @@ export default {
     components: {
         Link,
     },
-    props: ["href"],
+    props: {
+        href: String,
+    },
 };
 </script>
 

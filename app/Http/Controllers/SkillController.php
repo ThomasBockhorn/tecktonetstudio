@@ -63,9 +63,9 @@ class SkillController extends Controller
      * @param  \App\Models\Skill  $skill
      * @return \Illuminate\Http\Response
      */
-    public function edit(Skill $skill)
+    public function edit(Skill $skill): Response
     {
-        //
+        return Inertia::render('Skills/edit',compact('skill'));
     }
 
     /**

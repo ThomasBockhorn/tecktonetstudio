@@ -166,8 +166,25 @@ const showingNavigationDropdown = ref(false);
                         >
                             Dashboard
                         </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('skills.index')"
+                            :active="route().current('skills.index')"
+                        >
+                            Skills
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('projects.index')"
+                            :active="route().current('projects.index')"
+                        >
+                            Projects
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('project-images.index')"
+                            :active="route().current('project-images.index')"
+                        >
+                            Project Images
+                        </ResponsiveNavLink>
                     </div>
-
                     <!-- Responsive Settings Options -->
                     <div
                         class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600"
