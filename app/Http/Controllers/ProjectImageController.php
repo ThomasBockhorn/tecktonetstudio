@@ -60,9 +60,9 @@ class ProjectImageController extends Controller
      * @param  \App\Models\ProjectImage  $projectImage
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectImage $projectImage)
+    public function edit(ProjectImage $projectImage): Response
     {
-
+        return Inertia::render('Project-Images/edit', compact('projectImage'));
     }
 
     /**

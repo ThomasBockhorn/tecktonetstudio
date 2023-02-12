@@ -5,10 +5,10 @@
                 <template v-for="item in data" :key="item.id">
                     <tr>
                         <td class="pt-2">{{ item.id }}</td>
-                        <td class="pt-2">{{ item.project_title }}</td>
+                        <td class="pt-2">{{ item.alt }}</td>
                         <td>
                             <NavigationLink
-                                :href="route('projects.edit', item.id)"
+                                :href="route('project-images.edit', item.id)"
                                 >Edit</NavigationLink
                             >
                         </td>

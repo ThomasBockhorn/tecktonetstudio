@@ -1,12 +1,12 @@
 <template>
-    <Head title="Project Images" />
+    <Head title="Edit project images" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2
                 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"
             >
-                Project Images
+                Edit Project Images
             </h2>
         </template>
 
@@ -16,10 +16,8 @@
                     class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
                 >
                     <div class="p-6 text-gray-900 dark:text-gray-100">
-                        <BackendProjectImagesTable :data="projectImages" />
-
-                        <NavigationLink :href="route('project-images.create')"
-                            >Create A Project Image</NavigationLink
+                        <NavigationLink :href="route('project-images.index')"
+                            >Back to Project Images</NavigationLink
                         >
                     </div>
                 </div>
@@ -32,17 +30,12 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
-import BackendProjectImagesTable from "@/Components/BackendTables/BackendProjectImagesTable.vue";
 
 export default {
     components: {
         AuthenticatedLayout,
         Head,
         NavigationLink,
-        BackendProjectImagesTable,
-    },
-    props: {
-        projectImages: Object,
     },
 };
 </script>
