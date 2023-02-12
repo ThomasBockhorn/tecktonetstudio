@@ -86,8 +86,12 @@ class SkillController extends Controller
      * @param  \App\Models\Skill  $skill
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Skill $skill)
+    public function destroy(Skill $skill): Response
     {
-        //
+        $skill->delete();
+
+        $skills = Skill::all();
+
+        return Inertia::render('Skills/index',compact('skills'));
     }
 }
