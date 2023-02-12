@@ -1,10 +1,9 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center overflow-auto">
         <table class="mt-5 border-separate border-spacing-6">
             <tbody>
                 <template v-for="item in data" :key="item.id">
                     <tr>
-                        <td class="pt-2">{{ item.id }}</td>
                         <td class="pt-2">{{ item.project_title }}</td>
                         <td>
                             <NavigationLink
@@ -23,6 +22,7 @@
                                 method="delete"
                                 class="inline-flex items-center px-4 py-2 m-2 bg-gray-800 border border-white rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150 mt-6"
                                 :href="route('projects.destroy', item.id)"
+                                as="button"
                                 >Delete</Link
                             >
                         </td>
