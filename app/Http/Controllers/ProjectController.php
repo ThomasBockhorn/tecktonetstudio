@@ -62,9 +62,9 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit(Project $project): Response
     {
-
+        return Inertia::render('Projects/edit', compact('project'));
     }
 
     /**

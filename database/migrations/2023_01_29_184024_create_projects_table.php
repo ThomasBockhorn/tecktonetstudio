@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('project_description');
             $table->string('project_category');
             $table->string('client_name');
+            $table->string('project_url');
             $table->timestamps();
         });
     }

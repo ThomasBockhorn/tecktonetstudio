@@ -14,6 +14,7 @@ class Project extends Model
         'project_description',
         'project_category',
         'client_name',
+        'project_url',
     ];
 
     /**

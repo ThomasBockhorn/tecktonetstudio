@@ -21,6 +21,7 @@ class ProjectFactory extends Factory
             'project_description' => $this->faker->paragraph,
             'project_category' => $this->faker->word,
             'client_name' => $this->faker->name,
+            'project_url' => $this->faker->url,
         ];
     }
 }
