@@ -85,8 +85,12 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Project $project)
+    public function destroy(Project $project): Response
     {
+        $project->delete();
 
+        $projects = Project::all();
+
+        return Inertia::render('Projects/index', compact('projects'));
     }
 }

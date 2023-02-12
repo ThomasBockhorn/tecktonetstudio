@@ -83,8 +83,12 @@ class ProjectImageController extends Controller
      * @param  \App\Models\ProjectImage  $projectImage
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectImage $projectImage)
+    public function destroy(ProjectImage $projectImage): Response
     {
+        $projectImage->delete();
 
+        $projectImages = ProjectImage::all();
+
+        return Inertia::render('Project-Images/index', compact('projectImages'));
     }
 }
