@@ -51,14 +51,6 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Projects
                                 </NavLink>
-                                <NavLink
-                                    :href="route('project-images.index')"
-                                    :active="
-                                        route().current('project-images.index')
-                                    "
-                                >
-                                    Project Images
-                                </NavLink>
                             </div>
                         </div>
 
@@ -177,12 +169,6 @@ const showingNavigationDropdown = ref(false);
                             :active="route().current('projects.index')"
                         >
                             Projects
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('project-images.index')"
-                            :active="route().current('project-images.index')"
-                        >
-                            Project Images
                         </ResponsiveNavLink>
                     </div>
                     <!-- Responsive Settings Options -->

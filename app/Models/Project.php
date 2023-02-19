@@ -16,13 +16,4 @@ class Project extends Model
         'client_name',
         'project_url',
     ];
-
-    /**
-     * The project has one project image
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function projectImage(){
-        return $this->hasOne(ProjectImage::class);
-    }
 }

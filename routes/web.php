@@ -52,16 +52,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/project-images', [ProjectImageController::class, 'index'])->name('project-images.index');
-    Route::get('/project-images/create', [ProjectImageController::class, 'create'])->name('project-images.create');
-    Route::post('/project-images', [ProjectImageController::class, 'store'])->name('project-images.store');
-    Route::get('/project-images/{projectImage}/edit', [ProjectImageController::class, 'edit'])->name('project-images.edit');
-    Route::patch('/project-images/{projectImage}', [ProjectImageController::class, 'update'])->name('project-images.update');
-    Route::delete('/project-images/{projectImage}', [ProjectImageController::class, 'destroy'])->name('project-images.destroy');
-    Route::get('/project-images/{projectImage}', [ProjectImageController::class, 'show'])->name('project-images.show');
-});
-
-Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
