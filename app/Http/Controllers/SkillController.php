@@ -8,7 +8,6 @@ use Inertia\Inertia;
 use Inertia\Response;
 use App\Http\Requests\StoreSkillRequest;
 
-
 class SkillController extends Controller
 {
     /**
@@ -41,22 +40,10 @@ class SkillController extends Controller
      */
     public function store(StoreSkillRequest $request): Response
     {
-        $skill = Skill::create($request);
 
-        return Inertia::render('Skills/index',compact('skill'));
-    }
+        $skill = Skill::create($request->all());
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Request $request): Response
-    {
-        $skill = Skill::find($request->id);
-
-        return Inertia::render('Skills/show',compact('skill'));
+        return self::index();
     }
 
     /**

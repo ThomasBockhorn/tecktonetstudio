@@ -39,7 +39,6 @@ Route::middleware('auth')->group(function(){
     Route::get('/skills/{skill}/edit', [SkillController::class, 'edit'])->name('skills.edit');
     Route::patch('/skills/{skill}', [SkillController::class, 'update'])->name('skills.update');
     Route::delete('/skills/{skill}', [SkillController::class, 'destroy'])->name('skills.destroy');
-    Route::get('/skills/{skill}', [SkillController::class, 'show'])->name('skills.show');
 });
 
 Route::middleware('auth')->group(function () {
