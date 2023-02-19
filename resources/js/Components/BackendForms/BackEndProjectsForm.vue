@@ -1,25 +1,40 @@
 <template>
     <div class="flex justify-center">
-        <form @submit.prevent="submit" method="post">
+        <form @submit.prevent="submit">
             <div class="grid grid-rows-2 mt-5">
-                <label for="skill">Enter a skill:</label>
+                <label for="project_title">Enter a Project Title:</label>
                 <input
                     class="border border-white rounded-md text-black"
                     type="text"
-                    name="skill"
-                    id="skill"
-                    v-model="form.skill"
+                    name="project_title"
+                    id="project_title"
+                    v-model="form.project_title"
                     required
                 />
             </div>
             <div class="grid grid-rows-2 mt-5">
-                <label class="mt-2" for="level">Enter the level: </label>
+                <label class="mt-2" for="project_description"
+                    >Enter a Project Description
+                </label>
                 <input
                     class="border border-white rounded-md text-black"
                     type="text"
-                    name="level"
-                    id="level"
-                    v-model="form.level"
+                    name="project_description"
+                    id="project_description"
+                    v-model="form.project_description"
+                    required
+                />
+            </div>
+            <div class="grid grid-rows-2 mt-5">
+                <label class="mt-2" for="project_url"
+                    >Enter a Project URL
+                </label>
+                <input
+                    class="border border-white rounded-md text-black"
+                    type="text"
+                    name="project_url"
+                    id="project_url"
+                    v-model="form.project_url"
                     required
                 />
             </div>
@@ -41,14 +56,16 @@ import { useForm } from "@inertiajs/vue3";
 export default {
     setup() {
         const form = useForm({
-            skill: "",
-            level: "",
+            project_title: "",
+            project_description: "",
+            project_url: "",
         });
 
         function submit() {
-            form.post(route("skills.store"));
-            form.skill = "";
-            form.level = "";
+            form.post(route("projects.store"));
+            form.project_title = "";
+            form.project_description = "";
+            form.project_url = "";
         }
 
         return { form, submit };
