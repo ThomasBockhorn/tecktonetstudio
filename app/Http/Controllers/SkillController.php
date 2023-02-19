@@ -81,8 +81,6 @@ class SkillController extends Controller
     {
         $skill->delete();
 
-        $skills = Skill::all();
-
-        return Inertia::render('Skills/index',compact('skills'));
+        return self::index();
     }
 }
