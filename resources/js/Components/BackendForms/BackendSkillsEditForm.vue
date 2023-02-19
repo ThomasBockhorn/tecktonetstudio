@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <form @submit.prevent="submit" method="post">
+        <form @submit.prevent="submit">
             <div class="grid grid-rows-2 mt-5">
                 <label for="skill">Enter a skill:</label>
                 <input
@@ -41,12 +41,12 @@ import { useForm } from "@inertiajs/vue3";
 export default {
     setup(props) {
         const form = useForm({
-            skill: "",
-            level: "",
+            skill: props.skill.skill,
+            level: props.skill.level,
         });
 
         function submit() {
-            form.post(route("skills.store"));
+            form.patch(route("skills.update", props.skill.id));
             form.skill = "";
             form.level = "";
         }

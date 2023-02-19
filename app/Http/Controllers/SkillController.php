@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Skill;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 use App\Http\Requests\StoreSkillRequest;
+use App\Http\Requests\UpdateSkillRequest;
 
 class SkillController extends Controller
 {
@@ -64,9 +64,11 @@ class SkillController extends Controller
      * @param  \App\Models\Skill  $skill
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Skill $skill)
+    public function update(UpdateSkillRequest $request, Skill $skill)
     {
-        //
+        $skill->update($request->all());
+
+        return self::index();
     }
 
     /**

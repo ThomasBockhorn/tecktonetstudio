@@ -16,6 +16,7 @@
                     class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
                 >
                     <div class="p-6 text-gray-900 dark:text-gray-100">
+                        <BackendSkillsEditForm :skill="skill" />
                         <NavigationLink :href="route('skills.index')"
                             >Back to Skill List</NavigationLink
                         >
@@ -30,12 +31,14 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
+import BackendSkillsEditForm from "@/Components/BackendForms/BackendSkillsEditForm.vue";
 
 export default {
     components: {
         AuthenticatedLayout,
         Head,
         NavigationLink,
+        BackendSkillsEditForm,
     },
     props: {
         skill: Object,
