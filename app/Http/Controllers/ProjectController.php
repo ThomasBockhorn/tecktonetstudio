@@ -47,19 +47,6 @@ class ProjectController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Request $request): Response
-    {
-        $project = Project::find($request->id);
-
-        return Inertia::render('Projects/show', compact('project'));
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Project  $project
@@ -70,6 +57,7 @@ class ProjectController extends Controller
         return Inertia::render('Projects/edit', compact('project'));
     }
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -79,7 +67,9 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
+        $project->update($request->all());
 
+        return self::index();
     }
 
     /**

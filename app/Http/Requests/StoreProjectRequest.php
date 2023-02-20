@@ -26,6 +26,7 @@ class StoreProjectRequest extends FormRequest
         return [
             'project_title' => ['required', 'string', 'max:255'],
             'project_description' => ['required', 'string'],
+            'project_url' => ['required', 'string', 'max:255'],
         ];
     }
 }

@@ -13,7 +13,7 @@ class UpdateProjectRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -26,8 +26,7 @@ class UpdateProjectRequest extends FormRequest
         return [
             'project_title' => ['required', 'string', 'max:255'],
             'project_description' => ['required', 'string'],
-            'project_category' => ['required', 'string', 'max:255'],
-            'client_name' => ['required', 'string', 'max:255'],
+            'project_url' => ['required', 'string', 'max:255'],
         ];
     }
 }
