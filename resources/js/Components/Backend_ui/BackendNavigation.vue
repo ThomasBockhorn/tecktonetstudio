@@ -10,26 +10,7 @@
                     <BackendLogo />
 
                     <!-- Navigation Links -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <NavLink
-                            :href="route('dashboard')"
-                            :active="route().current('dashboard')"
-                        >
-                            Dashboard
-                        </NavLink>
-                        <NavLink
-                            :href="route('skills.index')"
-                            :active="route().current('skills.index')"
-                        >
-                            Skills
-                        </NavLink>
-                        <NavLink
-                            :href="route('projects.index')"
-                            :active="route().current('projects.index')"
-                        >
-                            Projects
-                        </NavLink>
-                    </div>
+                    <BackendNavLinks />
                 </div>
 
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -185,6 +166,7 @@ import NavLink from "@/Components/NavLink.vue";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
 import { Link } from "@inertiajs/vue3";
 import BackendLogo from "@/Components/Backend_ui/BackendLogo.vue";
+import BackendNavLinks from "@/Components/Backend_ui/BackendNavLinks.vue";
 
 const showingNavigationDropdown = ref(false);
 
@@ -196,6 +178,7 @@ export default {
         ResponsiveNavLink,
         Link,
         BackendLogo,
+        BackendNavLinks,
     },
     setup() {
         return {
