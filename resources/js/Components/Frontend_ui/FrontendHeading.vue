@@ -1,6 +1,24 @@
 <template>
-    <div class="flex">
-        <ApplicationLogo />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <ApplicationLogo />
+            </div>
+            <div class="flex">
+                <a href="https://github.com/ThomasBockhorn" class="m-5"
+                    ><font-awesome-icon
+                        icon="fa-brands fa-github"
+                        class="text-white fa-2x"
+                /></a>
+                <a
+                    href="https://www.linkedin.com/in/thomasbockhorn/"
+                    class="m-5"
+                    ><font-awesome-icon
+                        icon="fa-brands fa-linkedin"
+                        class="text-white fa-2x"
+                /></a>
+            </div>
+        </div>
     </div>
 </template>
 

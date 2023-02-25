@@ -66,6 +66,7 @@
             class="sm:hidden"
         >
             <BackendResponsiveLink />
+
             <!-- Responsive Settings Options -->
             <BackendResponsiveSettings />
         </div>
