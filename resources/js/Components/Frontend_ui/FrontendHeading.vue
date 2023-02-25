@@ -1,13 +1,17 @@
 <template>
-    <div>
-        <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
-            Heading
-        </h1>
+    <div class="flex">
+        <ApplicationLogo />
     </div>
 </template>
 
 <script>
-export default {};
+import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+
+export default {
+    components: {
+        ApplicationLogo,
+    },
+};
 </script>
 
 <style></style>
