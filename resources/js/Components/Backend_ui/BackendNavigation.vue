@@ -74,11 +74,6 @@
 
 <script>
 import { ref } from "vue";
-import Dropdown from "@/Components/Dropdown.vue";
-import DropdownLink from "@/Components/DropdownLink.vue";
-import NavLink from "@/Components/NavLink.vue";
-import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
-import { Link } from "@inertiajs/vue3";
 import BackendLogo from "@/Components/Backend_ui/BackendLogo.vue";
 import BackendNavLinks from "@/Components/Backend_ui/BackendNavLinks.vue";
 import BackendSettingsDropdown from "@/Components/Backend_ui/BackendSettingsDropdown.vue";
@@ -89,11 +84,6 @@ const showingNavigationDropdown = ref(false);
 
 export default {
     components: {
-        Dropdown,
-        DropdownLink,
-        NavLink,
-        ResponsiveNavLink,
-        Link,
         BackendLogo,
         BackendNavLinks,
         BackendSettingsDropdown,
