@@ -67,33 +67,7 @@
         >
             <BackendResponsiveLink />
             <!-- Responsive Settings Options -->
-            <div
-                class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600"
-            >
-                <div class="px-4">
-                    <div
-                        class="font-medium text-base text-gray-800 dark:text-gray-200"
-                    >
-                        {{ $page.props.auth.user.name }}
-                    </div>
-                    <div class="font-medium text-sm text-gray-500">
-                        {{ $page.props.auth.user.email }}
-                    </div>
-                </div>
-
-                <div class="mt-3 space-y-1">
-                    <ResponsiveNavLink :href="route('profile.edit')">
-                        Profile
-                    </ResponsiveNavLink>
-                    <ResponsiveNavLink
-                        :href="route('logout')"
-                        method="post"
-                        as="button"
-                    >
-                        Log Out
-                    </ResponsiveNavLink>
-                </div>
-            </div>
+            <BackendResponsiveSettings />
         </div>
     </nav>
 </template>
@@ -109,6 +83,7 @@ import BackendLogo from "@/Components/Backend_ui/BackendLogo.vue";
 import BackendNavLinks from "@/Components/Backend_ui/BackendNavLinks.vue";
 import BackendSettingsDropdown from "@/Components/Backend_ui/BackendSettingsDropdown.vue";
 import BackendResponsiveLink from "@/Components/Backend_ui/BackendResponsiveLink.vue";
+import BackendResponsiveSettings from "@/Components/Backend_ui/BackendResponsiveSettings.vue";
 
 const showingNavigationDropdown = ref(false);
 
@@ -123,6 +98,7 @@ export default {
         BackendNavLinks,
         BackendSettingsDropdown,
         BackendResponsiveLink,
+        BackendResponsiveSettings,
     },
     setup() {
         return {
