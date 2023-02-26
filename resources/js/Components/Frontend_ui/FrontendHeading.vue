@@ -1,10 +1,10 @@
 <template>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 z-20">
         <div class="flex justify-between h-16">
-            <div class="flex">
+            <div class="flex z-20">
                 <ApplicationLogo />
             </div>
-            <div class="flex">
+            <div class="flex z-20">
                 <a href="https://github.com/ThomasBockhorn" class="m-5"
                     ><font-awesome-icon
                         icon="fa-brands fa-github"

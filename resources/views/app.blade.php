@@ -11,6 +11,7 @@
         <style>
             body{
                 overflow-y: scroll;
+                padding-bottom: 60px;
             }
 
             body::-webkit-scrollbar{
@@ -20,6 +21,13 @@
             body{
                 -ms-overflow-style: none;
                 scrollbar-width: none;
+            }
+
+            html, body {
+                margin: 0;
+                min-height: 100vh;
+                min-width: 100vh;
+                padding: 0;
             }
         </style>
         <!-- Scripts -->
