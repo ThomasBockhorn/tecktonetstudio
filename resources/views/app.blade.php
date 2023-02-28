@@ -10,19 +10,8 @@
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
         <style>
             body{
-                overflow-y: scroll;
-                padding-bottom: 60px;
+                overflow: hidden;
             }
-
-            body::-webkit-scrollbar{
-                display: none;
-            }
-
-            body{
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-
             html, body {
                 margin: 0;
                 min-height: 100vh;
