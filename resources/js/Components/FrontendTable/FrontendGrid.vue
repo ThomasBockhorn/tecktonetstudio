@@ -2,7 +2,7 @@
     <div id="neon" class="h-2/3 w-2/3 z-0 absolute mx-auto"></div>
     <div
         id="blackout"
-        class="absolute h-full z-10 bg-gray-100 min-h-screen dark:bg-gray-900 border-grey-900 border-5 w-full -rotate-45"
+        class="absolute h-full w-full z-10 bg-gray-100 dark:bg-gray-900 border-grey-900 border-5 -rotate-45"
     ></div>
     <div class="grid grid-cols-2 z-20 mx-auto absolute">
         <div>1</div>
