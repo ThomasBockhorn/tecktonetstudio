@@ -1,14 +1,61 @@
 <template>
-    <div id="neon" class="h-2/3 w-2/3 z-0 absolute mx-auto"></div>
+    <div id="neon" class="h-2/3 w-3/4 z-0 absolute mx-auto"></div>
     <div
         id="blackout"
-        class="absolute h-full w-full z-10 bg-gray-100 dark:bg-gray-900 border-grey-900 border-5 -rotate-45"
+        class="absolute h-2/3 w-full z-10 bg-gray-100 dark:bg-gray-900 border-grey-900 border-5 -rotate-45"
     ></div>
-    <div class="grid grid-cols-2 z-20 mx-auto absolute">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+    <div class="grid grid-cols-4 grid-flow-rows z-20 gap-4 w-3/4">
+        <div class="col-span-3 p-7">
+            <h1 class="text-2xl mb-5 text-center">Welcome</h1>
+            <div class="flex">
+                <div>
+                    <img
+                        src="/img/ThomasBockhorn.JPG"
+                        alt="Thomas Bockhorn"
+                        class="float-left w-40 h-50 m-5"
+                    />
+                    <p class="text-lg">
+                        I first got into web development with an invitation by
+                        Udacity including a Google scholarship for their
+                        front-end web development program. After taking a few
+                        lessions, I became hooked on all things web development.
+                        To further my education, I took and continue to take
+                        Udemy courses for both front-end and back-end
+                        development. The beauty of both technical and asthetic
+                        spheres and how they interacted together fascinated me.
+                        Just like architecture, good websites need to consider
+                        both form and function.
+                    </p>
+                    <p class="mt-5">- Thomas Bockhorn</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1">
+            <div class="flex flex-col">
+                <h1 class="text-2xl ml-5 mr-5 text-center mb-5">Menu</h1>
+
+                <button class="text-lg text-center">
+                    <span class="hover:underline hover:decoration-2"
+                        >Welcome</span
+                    >
+                </button>
+                <button class="text-lg text-center">
+                    <span class="hover:underline hover:decoration-2"
+                        >Projects</span
+                    >
+                </button>
+                <button class="text-lg text-center">
+                    <span class="hover:underline hover:decoration-2"
+                        >Skills</span
+                    >
+                </button>
+                <button class="text-lg text-center">
+                    <span class="hover:underline hover:decoration-2"
+                        >Contact</span
+                    >
+                </button>
+            </div>
+        </div>
     </div>
 </template>
 
