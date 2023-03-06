@@ -13,42 +13,7 @@
         <SkillsFrame v-if="frontFrame === 'skills'" />
         <ContactFrame v-if="frontFrame === 'contact'" />
         <div class="col-span-1">
-            <div class="flex flex-col">
-                <h1 class="text-2xl ml-5 mr-5 text-center mb-5">Menu</h1>
-
-                <button
-                    class="text-lg text-center"
-                    @click="changeFrame('welcome')"
-                >
-                    <span class="hover:underline hover:decoration-2"
-                        >Welcome</span
-                    >
-                </button>
-                <button
-                    class="text-lg text-center"
-                    @click="changeFrame('projects')"
-                >
-                    <span class="hover:underline hover:decoration-2"
-                        >Projects</span
-                    >
-                </button>
-                <button
-                    class="text-lg text-center"
-                    @click="changeFrame('skills')"
-                >
-                    <span class="hover:underline hover:decoration-2"
-                        >Skills</span
-                    >
-                </button>
-                <button
-                    class="text-lg text-center"
-                    @click="changeFrame('contact')"
-                >
-                    <span class="hover:underline hover:decoration-2"
-                        >Contact</span
-                    >
-                </button>
-            </div>
+            <FrontendMenu @changeFrame="changeFrame" />
         </div>
     </div>
 </template>
@@ -58,6 +23,7 @@ import WelcomeFrame from "@/Components/FrontEndFrames/WelcomeFrame.vue";
 import ProjectsFrame from "@/Components/FrontEndFrames/ProjectsFrame.vue";
 import SkillsFrame from "@/Components/FrontEndFrames/SkillsFrame.vue";
 import ContactFrame from "@/Components/FrontEndFrames/ContactFrame.vue";
+import FrontendMenu from "@/Components/Frontend_ui/FrontendMenu.vue";
 
 export default {
     components: {
@@ -65,6 +31,7 @@ export default {
         ProjectsFrame,
         SkillsFrame,
         ContactFrame,
+        FrontendMenu,
     },
 
     data() {
@@ -87,10 +54,6 @@ export default {
     box-shadow: 0px 0px 0.5em 0px hsl(186 100% 69%),
         0px 0px 0.5em 0px hsl(186 100% 69%);
     animation: glow 3s infinate;
-}
-
-span {
-    text-decoration-color: hsl(186 100% 69%);
 }
 
 #grid {
