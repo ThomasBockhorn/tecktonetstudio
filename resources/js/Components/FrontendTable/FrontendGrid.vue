@@ -4,52 +4,46 @@
         id="blackout"
         class="absolute h-2/3 w-full z-10 bg-gray-100 dark:bg-gray-900 border-grey-900 border-5 -rotate-45"
     ></div>
-    <div class="grid grid-cols-4 grid-flow-rows z-20 gap-4 w-3/4">
-        <div class="col-span-3 p-7">
-            <h1 class="text-2xl mb-5 text-center">Welcome</h1>
-            <div class="flex">
-                <div>
-                    <img
-                        src="/img/ThomasBockhorn.JPG"
-                        alt="Thomas Bockhorn"
-                        class="float-left w-40 h-50 m-5"
-                    />
-                    <p class="text-lg">
-                        I first got into web development with an invitation by
-                        Udacity including a Google scholarship for their
-                        front-end web development program. After taking a few
-                        lessions, I became hooked on all things web development.
-                        To further my education, I took and continue to take
-                        Udemy courses for both front-end and back-end
-                        development. The beauty of both technical and asthetic
-                        spheres and how they interacted together fascinated me.
-                        Just like architecture, good websites need to consider
-                        both form and function.
-                    </p>
-                    <p class="mt-5">- Thomas Bockhorn</p>
-                </div>
-            </div>
-        </div>
+    <div
+        id="grid"
+        class="grid grid-cols-4 grid-flow-rows z-20 gap-4 w-3/4 h-3/4"
+    >
+        <WelcomeFrame v-if="frontFrame === 'welcome'" />
+        <ProjectsFrame v-if="frontFrame === 'projects'" />
+        <SkillsFrame v-if="frontFrame === 'skills'" />
+        <ContactFrame v-if="frontFrame === 'contact'" />
         <div class="col-span-1">
             <div class="flex flex-col">
                 <h1 class="text-2xl ml-5 mr-5 text-center mb-5">Menu</h1>
 
-                <button class="text-lg text-center">
+                <button
+                    class="text-lg text-center"
+                    @click="changeFrame('welcome')"
+                >
                     <span class="hover:underline hover:decoration-2"
                         >Welcome</span
                     >
                 </button>
-                <button class="text-lg text-center">
+                <button
+                    class="text-lg text-center"
+                    @click="changeFrame('projects')"
+                >
                     <span class="hover:underline hover:decoration-2"
                         >Projects</span
                     >
                 </button>
-                <button class="text-lg text-center">
+                <button
+                    class="text-lg text-center"
+                    @click="changeFrame('skills')"
+                >
                     <span class="hover:underline hover:decoration-2"
                         >Skills</span
                     >
                 </button>
-                <button class="text-lg text-center">
+                <button
+                    class="text-lg text-center"
+                    @click="changeFrame('contact')"
+                >
                     <span class="hover:underline hover:decoration-2"
                         >Contact</span
                     >
@@ -60,7 +54,31 @@
 </template>
 
 <script>
-export default {};
+import WelcomeFrame from "@/Components/FrontEndFrames/WelcomeFrame.vue";
+import ProjectsFrame from "@/Components/FrontEndFrames/ProjectsFrame.vue";
+import SkillsFrame from "@/Components/FrontEndFrames/SkillsFrame.vue";
+import ContactFrame from "@/Components/FrontEndFrames/ContactFrame.vue";
+
+export default {
+    components: {
+        WelcomeFrame,
+        ProjectsFrame,
+        SkillsFrame,
+        ContactFrame,
+    },
+
+    data() {
+        return {
+            frontFrame: "welcome",
+        };
+    },
+
+    methods: {
+        changeFrame(frame) {
+            this.frontFrame = frame;
+        },
+    },
+};
 </script>
 
 <style scoped>
@@ -73,6 +91,10 @@ export default {};
 
 span {
     text-decoration-color: hsl(186 100% 69%);
+}
+
+#grid {
+    grid-auto-rows: 25rem;
 }
 
 @keyframes glow {
