@@ -71,6 +71,10 @@ export default {};
     animation: glow 3s infinate;
 }
 
+span {
+    text-decoration-color: hsl(186 100% 69%);
+}
+
 @keyframes glow {
     0% {
         box-shadow: 2px 2px 0.5em 2px hsl(186 100% 69%),
