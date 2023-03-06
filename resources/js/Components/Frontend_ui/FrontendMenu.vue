@@ -1,6 +1,8 @@
 <template>
     <div class="flex flex-col">
-        <h1 class="text-2xl ml-5 mr-5 text-center mb-5">Menu</h1>
+        <h1 class="text-2xl ml-5 mr-5 text-center mb-5">
+            <span class="uppercase">Menu</span>
+        </h1>
 
         <button class="text-lg text-center" @click="changeFrame('welcome')">
             <span class="hover:underline hover:decoration-2">Welcome</span>
