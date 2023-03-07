@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectImageController;
+use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +22,7 @@ use App\Http\Controllers\ProjectImageController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
+        'projects' => Project::all()->take(5)
     ]);
 });
 

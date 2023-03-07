@@ -9,7 +9,7 @@
         class="grid grid-cols-4 grid-flow-rows z-20 gap-4 w-3/4 h-3/4"
     >
         <WelcomeFrame v-if="frontFrame === 'welcome'" />
-        <ProjectsFrame v-if="frontFrame === 'projects'" />
+        <ProjectsFrame v-if="frontFrame === 'projects'" :projects="projects" />
         <SkillsFrame v-if="frontFrame === 'skills'" />
         <ContactFrame v-if="frontFrame === 'contact'" />
         <div class="col-span-1">
@@ -33,13 +33,14 @@ export default {
         ContactFrame,
         FrontendMenu,
     },
-
+    props: {
+        projects: Object,
+    },
     data() {
         return {
             frontFrame: "welcome",
         };
     },
-
     methods: {
         changeFrame(frame) {
             this.frontFrame = frame;

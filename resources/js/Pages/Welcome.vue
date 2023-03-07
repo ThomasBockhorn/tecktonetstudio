@@ -5,7 +5,7 @@
     <div
         class="relative flex bg-gray-100 min-h-screen dark:bg-gray-900 items-top justify-center sm:items-center sm:pt-0 text-white"
     >
-        <FrontendGrid />
+        <FrontendGrid :projects="projects" />
     </div>
     <FrontendFooter />
 </template>
@@ -22,6 +22,9 @@ export default {
         FrontendHeading,
         FrontendFooter,
         FrontendGrid,
+    },
+    props: {
+        projects: Object,
     },
 };
 </script>
