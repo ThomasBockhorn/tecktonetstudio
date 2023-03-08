@@ -1,19 +1,20 @@
 <template>
     <div class="col-span-3 p-7">
-        <h1 class="text-2xl mb-5 text-center uppercase mb-5">Projects</h1>
-        <div class="flex flex-col">
-            <div>
-                <ul>
-                    <li v-for="project in projects" :key="project.id">
-                        <a :href="project.project_url" target="_blank">
-                            <span class="hover:underline hover:decoration-2">
-                                {{ project.project_title }}
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <h1 class="text-2xl mb-5 text-center uppercase">Projects</h1>
+
+        <ul class="flex flex-col">
+            <li
+                v-for="project in projects"
+                :key="project.id"
+                class="text-center"
+            >
+                <a :href="project.project_url" target="_blank">
+                    <span class="hover:underline hover:decoration-2">
+                        {{ project.project_title }}
+                    </span>
+                </a>
+            </li>
+        </ul>
     </div>
 </template>
 
