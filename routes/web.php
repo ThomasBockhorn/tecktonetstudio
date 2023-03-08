@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\ProjectImageController;
 use App\Models\Project;
+use App\Models\Skill;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +22,8 @@ use App\Models\Project;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
-        'projects' => Project::all()->take(5)
+        'projects' => Project::all()->take(5),
+        'skills'=> Skill::all()->take(5),
     ]);
 });
 

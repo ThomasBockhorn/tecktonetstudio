@@ -10,7 +10,7 @@
     >
         <WelcomeFrame v-if="frontFrame === 'welcome'" />
         <ProjectsFrame v-if="frontFrame === 'projects'" :projects="projects" />
-        <SkillsFrame v-if="frontFrame === 'skills'" />
+        <SkillsFrame v-if="frontFrame === 'skills'" :skills="skills" />
         <ContactFrame v-if="frontFrame === 'contact'" />
         <div class="col-span-1">
             <FrontendMenu @changeFrame="changeFrame" />
@@ -35,6 +35,7 @@ export default {
     },
     props: {
         projects: Object,
+        skills: Object,
     },
     data() {
         return {
