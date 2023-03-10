@@ -42,13 +42,11 @@ export default {
     setup(props) {
         const form = useForm({
             skill: props.skill.skill,
-            level: props.skill.level,
         });
 
         function submit() {
             form.patch(route("skills.update", props.skill.id));
             form.skill = "";
-            form.level = "";
         }
 
         return { form, submit };

@@ -25,7 +25,6 @@ class StoreSkillRequest extends FormRequest
     {
         return [
             'skill' => 'required|string|max:255',
-            'level' => 'required|integer|min:0|max:100',
         ];
     }
 }

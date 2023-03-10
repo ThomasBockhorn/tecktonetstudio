@@ -18,7 +18,6 @@ class SkillFactory extends Factory
     {
         return [
             'skill' => $this->faker->word,
-            'level' => $this->faker->numberBetween(1, 100),
         ];
     }
 }

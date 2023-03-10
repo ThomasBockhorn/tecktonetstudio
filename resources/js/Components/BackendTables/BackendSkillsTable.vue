@@ -5,7 +5,6 @@
                 <template v-for="item in data" :key="item.id">
                     <tr>
                         <td class="pt-2">{{ item.skill }}</td>
-                        <td class="pt-2">{{ item.level }}</td>
                         <td>
                             <NavigationLink
                                 :href="route('skills.edit', item.id)"
