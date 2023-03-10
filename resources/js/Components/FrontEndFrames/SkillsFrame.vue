@@ -18,12 +18,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-#neon {
-    border: 1px solid hsl(186 100% 69%);
-    box-shadow: 0px 0px 0.5em 0px hsl(186 100% 69%),
-        0px 0px 0.5em 0px hsl(186 100% 69%);
-    animation: glow 3s infinate;
-}
-</style>
