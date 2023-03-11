@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7">
+    <div class="col-span-3 p-7 overflow-scroll">
         <h1 class="text-2xl mb-5 text-center uppercase">Welcome</h1>
         <div class="flex">
             <div>
@@ -17,7 +17,10 @@
                     courses for both front-end and back-end development. The
                     beauty of both technical and asthetic spheres and how they
                     interact together fascinates me. Just like architecture,
-                    good websites need to consider both form and function.
+                    good websites need to consider both form and function. My
+                    coursework gave me the skills to build websites for clients.
+                    Most recently, I built one for Jim Felder to showcase his
+                    art and paintings available for sale.
                 </p>
                 <p class="mt-5">- Thomas Bockhorn</p>
             </div>
