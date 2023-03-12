@@ -4,7 +4,7 @@
         <div class="flex">
             <div>
                 <img
-                    src="/img/ThomasBockhorn.JPG"
+                    src="/img/ThomasBockhornHeadShot.jpg"
                     alt="Thomas Bockhorn"
                     class="float-left w-40 h-50 m-5"
                 />
@@ -22,7 +22,7 @@
                     Most recently, I built one for Jim Felder to showcase his
                     art and paintings available for sale.
                 </p>
-                <p class="mt-5">- Thomas Bockhorn</p>
+                <p class="mt-5 text-center">- Thomas Bockhorn</p>
             </div>
         </div>
     </div>
