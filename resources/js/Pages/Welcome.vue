@@ -3,7 +3,7 @@
 
     <FrontendHeading />
     <div
-        class="relative flex bg-gray-100 min-h-screen dark:bg-gray-900 items-top justify-center sm:items-center sm:pt-0 text-white"
+        class="relative flex bg-gray-100 min-h-screen dark:bg-gray-900 items-center justify-center text-white sm:my-auto"
     >
         <FrontendGrid :projects="projects" :skills="skills" />
     </div>
