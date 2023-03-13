@@ -27,3 +27,10 @@
         </div>
     </div>
 </template>
+<style scoped>
+@media screen and (max-width: 390px) {
+    p {
+        font-size: 0.8rem;
+    }
+}
+</style>
