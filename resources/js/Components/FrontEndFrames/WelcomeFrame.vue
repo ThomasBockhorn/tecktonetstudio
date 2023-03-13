@@ -1,6 +1,6 @@
 <template>
     <div class="col-span-3 p-7 overflow-scroll">
-        <h1 class="text-2xl mb-5 text-center uppercase">Welcome</h1>
+        <h1 id="title" class="text-2xl mb-5 text-center uppercase">Welcome</h1>
         <div class="flex">
             <div>
                 <img
@@ -28,9 +28,13 @@
     </div>
 </template>
 <style scoped>
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
     p {
         font-size: 0.8rem;
+    }
+
+    #title {
+        font-size: 1rem;
     }
 }
 </style>
