@@ -30,11 +30,17 @@
 <style scoped>
 @media screen and (max-width: 414px) {
     p {
-        font-size: 0.8rem;
+        font-size: 16px;
     }
 
     #title {
-        font-size: 1rem;
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: 10%;
+        padding-right: 5em;
     }
 }
 </style>

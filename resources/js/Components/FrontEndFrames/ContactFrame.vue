@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7">
+    <div class="col-span-3 p-7 overflow-x-scroll">
         <h1 class="text-2xl mb-5 text-center uppercase">Contact</h1>
         <div class="flex">
             <div>
@@ -14,3 +14,10 @@
         </div>
     </div>
 </template>
+<style scoped>
+@media screen and (max-width: 414px) {
+    p {
+        font-size: 16px;
+    }
+}
+</style>

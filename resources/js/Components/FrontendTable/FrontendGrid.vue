@@ -84,4 +84,10 @@ export default {
             20px 20px 0.5em 20px hsl(186 100% 69%);
     }
 }
+
+@media screen and (max-width: 820px) {
+    #grid {
+        grid-auto-rows: 18rem;
+    }
+}
 </style>

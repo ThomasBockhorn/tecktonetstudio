@@ -46,13 +46,13 @@ span {
     text-decoration-color: hsl(186 100% 69%);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 412px) {
     .view-sizes {
-        font-size: 0.8rem;
+        font-size: 16px;
     }
 
     .view-size-title {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 </style>
