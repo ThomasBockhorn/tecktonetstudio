@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col">
-        <h1 class="text-2xl ml-5 mr-5 text-center mb-5 view-size-title">
+        <h1 class="text-2xl text-center mb-5 view-size-title">
             <span class="uppercase">Menu</span>
         </h1>
 
@@ -46,7 +46,7 @@ span {
     text-decoration-color: hsl(186 100% 69%);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .view-sizes {
         font-size: 0.8rem;
     }
