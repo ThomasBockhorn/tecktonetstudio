@@ -6,7 +6,7 @@
     ></div>
     <div
         id="grid"
-        class="grid grid-cols-4 grid-flow-rows z-20 gap-4 w-3/4 h-3/4"
+        class="grid grid-cols-4 grid-flow-rows z-20 gap-5 w-3/4 h-3/4 m-5"
     >
         <WelcomeFrame v-if="frontFrame === 'welcome'" />
         <ProjectsFrame v-if="frontFrame === 'projects'" :projects="projects" />
@@ -94,9 +94,12 @@ export default {
 @media screen and (max-width: 820px) {
     #grid {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 5;
     }
     #hideMenu {
+        display: none;
+    }
+    #blackout {
         display: none;
     }
 }

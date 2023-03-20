@@ -28,12 +28,8 @@
     </div>
 </template>
 <style scoped>
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 820px) {
     p {
-        font-size: 16px;
-    }
-
-    #title {
         font-size: 16px;
     }
 

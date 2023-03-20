@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7 overflow-x-scroll">
+    <div class="col-span-3 p-7 overflow-scroll">
         <h1 class="text-2xl mb-5 text-center uppercase">Contact</h1>
         <div class="flex">
             <div>
@@ -15,9 +15,12 @@
     </div>
 </template>
 <style scoped>
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 820px) {
     p {
         font-size: 16px;
+    }
+    em {
+        text-align: left;
     }
 }
 </style>
