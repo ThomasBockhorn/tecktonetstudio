@@ -94,6 +94,7 @@ export default {
 @media screen and (max-width: 820px) {
     #grid {
         grid-template-columns: 1fr;
+        gap: 0;
     }
     #hideMenu {
         display: none;
