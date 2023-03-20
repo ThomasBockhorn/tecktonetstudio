@@ -39,8 +39,10 @@
 
     img {
         width: 100%;
-        height: 10%;
-        padding-right: 5em;
+        height: 25%;
+        float: none;
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
 </style>

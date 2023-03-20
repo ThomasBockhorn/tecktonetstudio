@@ -1,11 +1,20 @@
 <template>
     <Head title="Welcome" />
 
-    <FrontendHeading />
+    <FrontendHeading @clickEvent="showMenu" />
+    <FrontendSmallMenu
+        :menu="menu"
+        @changeFrame="changeFrame"
+        @showMenu="showMenu"
+    />
     <div
         class="relative flex bg-gray-100 min-h-screen dark:bg-gray-900 items-center justify-center text-white"
     >
-        <FrontendGrid :projects="projects" :skills="skills" />
+        <FrontendGrid
+            :projects="projects"
+            :skills="skills"
+            :pickedFrame="pickedFrame"
+        />
     </div>
     <FrontendFooter />
 </template>
@@ -15,6 +24,7 @@ import { Head } from "@inertiajs/vue3";
 import FrontendHeading from "@/Components/Frontend_ui/FrontendHeading.vue";
 import FrontendFooter from "@/Components/Frontend_ui/FrontendFooter.vue";
 import FrontendGrid from "@/Components/FrontendTable/FrontendGrid.vue";
+import FrontendSmallMenu from "@/Components/Frontend_ui/FrontendSmallMenu.vue";
 
 export default {
     components: {
@@ -22,10 +32,26 @@ export default {
         FrontendHeading,
         FrontendFooter,
         FrontendGrid,
+        FrontendSmallMenu,
     },
     props: {
         projects: Object,
         skills: Object,
+    },
+    data() {
+        return {
+            menu: false,
+            pickedFrame: "welcome",
+        };
+    },
+    methods: {
+        showMenu(event) {
+            this.menu = event;
+        },
+        changeFrame(frame) {
+            this.pickedFrame = frame;
+            this.menu = false;
+        },
     },
 };
 </script>

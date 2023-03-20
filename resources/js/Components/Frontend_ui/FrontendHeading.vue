@@ -17,6 +17,8 @@
                         icon="fa-brands fa-linkedin"
                         class="text-white fa-2x small-sizes"
                 /></a>
+
+                <FrontendHamburger @clickEvent="clickEvent" />
             </div>
         </div>
     </div>
@@ -24,10 +26,17 @@
 
 <script>
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import FrontendHamburger from "@/Components/Frontend_ui/FrontendHamburger.vue";
 
 export default {
     components: {
         ApplicationLogo,
+        FrontendHamburger,
+    },
+    methods: {
+        clickEvent(clicked) {
+            this.$emit("clickEvent", clicked);
+        },
     },
 };
 </script>

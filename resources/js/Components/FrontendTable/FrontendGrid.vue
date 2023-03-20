@@ -36,11 +36,17 @@ export default {
     props: {
         projects: Object,
         skills: Object,
+        pickedFrame: String,
     },
     data() {
         return {
             frontFrame: "welcome",
         };
+    },
+    watch: {
+        pickedFrame(newFrame) {
+            this.frontFrame = newFrame;
+        },
     },
     methods: {
         changeFrame(frame) {
