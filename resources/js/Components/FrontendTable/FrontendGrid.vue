@@ -12,7 +12,7 @@
         <ProjectsFrame v-if="frontFrame === 'projects'" :projects="projects" />
         <SkillsFrame v-if="frontFrame === 'skills'" :skills="skills" />
         <ContactFrame v-if="frontFrame === 'contact'" />
-        <div class="col-span-1">
+        <div class="col-span-1" id="hideMenu">
             <FrontendMenu @changeFrame="changeFrame" />
         </div>
     </div>
@@ -93,7 +93,10 @@ export default {
 
 @media screen and (max-width: 820px) {
     #grid {
-        grid-auto-rows: 18rem;
+        grid-template-columns: 1fr;
+    }
+    #hideMenu {
+        display: none;
     }
 }
 </style>

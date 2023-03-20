@@ -44,9 +44,7 @@ export default {
 <style scoped>
 @media screen and (max-width: 820px) {
     .small-sizes {
-        width: 100%;
-        height: 75%;
-        margin: 0;
+        display: none;
     }
 }
 </style>
