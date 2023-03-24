@@ -44,7 +44,7 @@ export default {
     background-color: white;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1024px) {
     .hamburger {
         display: none;
     }

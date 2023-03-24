@@ -28,7 +28,7 @@
     </div>
 </template>
 <style scoped>
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 425px) {
     p {
         font-size: 16px;
     }
@@ -38,6 +38,20 @@
         height: 35%;
         float: none;
         margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 50%;
+        height: 60%;
+        float: left;
+        margin: 1rem;
         margin-bottom: 10px;
     }
 }
