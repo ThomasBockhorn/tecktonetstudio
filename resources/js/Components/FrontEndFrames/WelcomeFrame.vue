@@ -35,7 +35,7 @@
 
     img {
         width: 100%;
-        height: 25%;
+        height: 35%;
         float: none;
         margin: 0;
         margin-bottom: 10px;
