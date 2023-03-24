@@ -17,7 +17,7 @@
 <style scoped>
 @media screen and (max-width: 820px) {
     p {
-        font-size: 16px;
+        font-size: 15px;
     }
     em {
         text-align: left;

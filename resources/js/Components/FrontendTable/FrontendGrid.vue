@@ -1,12 +1,12 @@
 <template>
-    <div id="neon" class="h-2/3 w-3/4 z-0 absolute"></div>
+    <div id="neon" class="h-2/3 w-3/4 z-0 absolute mb-20"></div>
     <div
         id="blackout"
         class="absolute h-2/3 w-full z-10 bg-gray-100 dark:bg-gray-900 border-grey-900 border-5 -rotate-45"
     ></div>
     <div
         id="grid"
-        class="grid grid-cols-4 grid-flow-rows z-20 gap-5 w-3/4 h-3/4 m-5"
+        class="grid grid-cols-4 grid-flow-rows z-20 gap-7 w-3/4 h-3/4 mb-10"
     >
         <WelcomeFrame v-if="frontFrame === 'welcome'" />
         <ProjectsFrame v-if="frontFrame === 'projects'" :projects="projects" />
@@ -95,12 +95,16 @@ export default {
     #grid {
         grid-template-columns: 1fr;
         gap: 5;
+        margin-bottom: 5rem;
     }
     #hideMenu {
         display: none;
     }
     #blackout {
         display: none;
+    }
+    #neon {
+        margin-bottom: 5rem;
     }
 }
 </style>
