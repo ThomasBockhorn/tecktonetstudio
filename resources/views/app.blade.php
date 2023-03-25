@@ -6,6 +6,9 @@
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel = "icon" type = "image/png" href = "{{ asset('favicon_symbol.png') }}">
+
+
         <!-- Hamburger menu -->
         <link href="dist/hamburgers.css" rel="stylesheet">
 
