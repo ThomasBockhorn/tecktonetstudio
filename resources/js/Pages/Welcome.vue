@@ -1,7 +1,7 @@
 <template>
     <Head title="Welcome" />
 
-    <FrontendHeading @clickEvent="showMenu" />
+    <FrontendHeading @clickEvent="showMenu" :burgerStatus="burgerStatus" />
     <FrontendSmallMenu
         :menu="menu"
         @changeFrame="changeFrame"
@@ -42,15 +42,18 @@ export default {
         return {
             menu: false,
             pickedFrame: "welcome",
+            burgerStatus: false,
         };
     },
     methods: {
         showMenu(event) {
             this.menu = event;
+            this.burgerStatus = event;
         },
         changeFrame(frame) {
             this.pickedFrame = frame;
             this.menu = false;
+            this.burgerStatus = false;
         },
     },
 };

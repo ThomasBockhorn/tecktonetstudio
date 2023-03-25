@@ -18,7 +18,10 @@
                         class="text-white fa-2x small-sizes"
                 /></a>
 
-                <FrontendHamburger @clickEvent="clickEvent" />
+                <FrontendHamburger
+                    @clickEvent="clickEvent"
+                    :burgerStatus="burgerStatus"
+                />
             </div>
         </div>
     </div>
@@ -32,6 +35,14 @@ export default {
     components: {
         ApplicationLogo,
         FrontendHamburger,
+    },
+    props: {
+        burgerStatus: Boolean,
+    },
+    watch: {
+        burgerStatus: function (newVal) {
+            this.clicked = newVal;
+        },
     },
     methods: {
         clickEvent(clicked) {

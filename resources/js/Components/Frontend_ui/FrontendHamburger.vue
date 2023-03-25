@@ -21,6 +21,15 @@ export default {
             clicked: false,
         };
     },
+    props: {
+        burgerStatus: Boolean,
+    },
+    watch: {
+        burgerStatus: function (newVal) {
+            this.clicked = newVal;
+            this.active = newVal ? "is-active" : "";
+        },
+    },
     methods: {
         clickEvent() {
             this.active = this.active === "" ? "is-active" : "";
