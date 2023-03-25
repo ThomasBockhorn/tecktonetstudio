@@ -21,7 +21,13 @@ class RegisteredUserController extends Controller
      */
     public function create(): Response
     {
-        return Inertia::render('Auth/Register');
+          //If there is more than one user, then the registration page is not available
+          if (User::count() < 1) {
+            return Inertia::render('Auth/Register');
+        }
+        //The unregistered user is redirected to welcome page
+        return Inertia::render('Welcome', [
+            'message' => 'Registration is not available',]);
     }
 
     /**
