@@ -55,4 +55,18 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 820px) {
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        width: 50%;
+        height: 60%;
+        float: left;
+        margin: 1rem;
+        margin-bottom: 10px;
+    }
+}
 </style>

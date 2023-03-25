@@ -107,4 +107,21 @@ export default {
         margin-bottom: 5rem;
     }
 }
+
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    #grid {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 7;
+        margin-bottom: 10rem;
+    }
+    #neon {
+        margin-bottom: 10rem;
+    }
+}
 </style>
