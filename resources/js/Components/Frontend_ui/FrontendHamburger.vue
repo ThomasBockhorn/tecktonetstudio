@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {

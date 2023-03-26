@@ -6,9 +6,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
-                    <!-- Logo -->
-                    <BackendLogo />
-
                     <!-- Navigation Links -->
                     <BackendNavLinks />
                 </div>
@@ -75,7 +72,6 @@
 
 <script>
 import { ref } from "vue";
-import BackendLogo from "@/Components/Backend_ui/BackendLogo.vue";
 import BackendNavLinks from "@/Components/Backend_ui/BackendNavLinks.vue";
 import BackendSettingsDropdown from "@/Components/Backend_ui/BackendSettingsDropdown.vue";
 import BackendResponsiveLink from "@/Components/Backend_ui/BackendResponsiveLink.vue";
@@ -85,7 +81,6 @@ const showingNavigationDropdown = ref(false);
 
 export default {
     components: {
-        BackendLogo,
         BackendNavLinks,
         BackendSettingsDropdown,
         BackendResponsiveLink,
@@ -98,5 +93,3 @@ export default {
     },
 };
 </script>
-
-<style></style>
