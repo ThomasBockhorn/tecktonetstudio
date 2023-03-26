@@ -31,7 +31,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head } from "@inertiajs/vue3";
 import NavigationLink from "@/Components/Backend_ui/NavigationLink.vue";
-import BackendProjectsEditForm from "@/Components/BackendForms/BackendProjectsEditForm.vue";
+import BackendProjectsEditForm from "@/Components/Backend_Forms/BackendProjectsEditForm.vue";
 
 export default {
     components: {
