@@ -8,7 +8,7 @@
                     build a web solution, you can contact me at:
                 </p>
                 <p class="text-center mt-5 text-lg">
-                    <em>Thomas.Bockhorn@tecktonet.com</em>
+                    <em>TEBockhorn@gmail.com</em>
                 </p>
             </div>
         </div>
