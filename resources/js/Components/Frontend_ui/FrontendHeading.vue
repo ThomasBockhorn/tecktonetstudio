@@ -1,9 +1,7 @@
 <template>
     <div class="max-w-7xl mx-auto px-4 lg:px-8 mt-5 z-20">
         <div class="flex justify-between h-16">
-            <div class="flex z-20">
-                <ApplicationLogo />
-            </div>
+            <div class="flex z-20"></div>
             <div class="flex z-20">
                 <a href="https://github.com/ThomasBockhorn" class="m-5"
                     ><font-awesome-icon
@@ -28,12 +26,10 @@
 </template>
 
 <script>
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import FrontendHamburger from "@/Components/Frontend_ui/FrontendHamburger.vue";
 
 export default {
     components: {
-        ApplicationLogo,
         FrontendHamburger,
     },
     props: {
