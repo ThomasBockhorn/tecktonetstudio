@@ -8,7 +8,7 @@
         @showMenu="showMenu"
     />
     <div
-        class="relative flex bg-gray-100 min-h-screen dark:bg-gray-900 items-center justify-center text-white"
+        class="relative flex bg-gray-100 min-h-screen bg-gray-900 items-center justify-center text-white"
     >
         <FrontendGrid
             :projects="projects"
