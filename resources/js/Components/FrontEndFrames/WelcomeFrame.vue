@@ -12,7 +12,7 @@
                     As a freelance web developer, I understand that your website
                     is a crucial part of your online presence, and I am
                     committed to delivering a high-quality product that meets
-                    your unique needs. Our approach is collaborative and
+                    your unique needs. My approach is collaborative and
                     client-focused, and I will work closely with you every step
                     of the way to ensure that your website reflects your brand
                     and meets your goals. Whether you're looking for a simple
