@@ -9,18 +9,23 @@
                     class="float-left w-40 h-50 m-5"
                 />
                 <p class="text-lg">
-                    I first got into web development with an invitation from
-                    Udacity to apply for a Google scholarship for their
-                    front-end web development program. After taking a few
-                    lessons , I became hooked on all things web development. To
-                    further my education, I took and continue to take Udemy
-                    courses for both front-end and back-end development. The
-                    beauty of both technical and asthetic spheres and how they
-                    interact together fascinates me. Just like architecture,
-                    good websites need to consider both form and function. My
-                    coursework gave me the skills to build websites for clients.
-                    Most recently, I built one for Jim Felder to showcase his
-                    art and paintings available for sale.
+                    As a freelance web developer, I understand that your website
+                    is a crucial part of your online presence, and I am
+                    committed to delivering a high-quality product that meets
+                    your unique needs. Our approach is collaborative and
+                    client-focused, and I will work closely with you every step
+                    of the way to ensure that your website reflects your brand
+                    and meets your goals. Whether you're looking for a simple
+                    landing page or a complex e-commerce platform, I have the
+                    skills and expertise to bring your project to fruition. I
+                    believe that communication is key, and we will keep you
+                    updated throughout the development process to ensure that
+                    you are satisfied with the direction of the project. I am
+                    committed to delivering a website that is user-friendly,
+                    visually appealing, and optimized for search engines. Thank
+                    you for considering us for your freelance web development
+                    project. I am looking forward to working with you and
+                    bringing your vision to life!
                 </p>
                 <p class="mt-5 text-center">- Thomas Bockhorn</p>
             </div>
