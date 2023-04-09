@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7">
+    <div class="col-span-3 p-7 overflow-scroll">
         <h1 class="text-2xl mb-5 text-center uppercase">Skills</h1>
         <div class="flex justify-center">
             <div class="grid grid-cols-2 gap-10">
