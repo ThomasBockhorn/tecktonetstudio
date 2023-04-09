@@ -21,8 +21,8 @@ use App\Models\Skill;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
-        'projects' => Project::all()->take(5),
-        'skills'=> Skill::all()->take(5),
+        'projects' => Project::all(),
+        'skills'=> Skill::all(),
     ]);
 });
 
