@@ -18,7 +18,7 @@
                     and meets your goals. Whether you're looking for a simple
                     landing page or a complex e-commerce platform, I have the
                     skills and expertise to bring your project to fruition. I
-                    believe that communication is key, and we will keep you
+                    believe that communication is key, and I will keep you
                     updated throughout the development process to ensure that
                     you are satisfied with the direction of the project. I am
                     committed to delivering a website that is user-friendly,
