@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7 overflow-scroll">
+    <div id="welcome-frame" class="col-span-3 p-7 overflow-scroll">
         <h1 id="title" class="text-2xl mb-5 text-center uppercase">Welcome</h1>
         <div class="flex">
             <div>
@@ -33,6 +33,10 @@
     </div>
 </template>
 <style scoped>
+#WelcomeFrame::-webkit-scrollbar {
+    display: none;
+}
+
 @media screen and (max-width: 425px) {
     p {
         font-size: 16px;

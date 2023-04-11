@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-3 p-7 overflow-scroll">
+    <div id="projectFrame" class="col-span-3 p-7 overflow-scroll">
         <h1 class="text-2xl mb-5 text-center uppercase">Projects</h1>
 
         <div class="flex flex-col">
@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style scoped>
+#projectFrame::-webkit-scrollbar {
+    display: none;
+}
+
 #neon {
     border: 1px solid hsl(186 100% 69%);
     box-shadow: 0px 0px 0.5em 0px hsl(186 100% 69%),
