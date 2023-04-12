@@ -1,5 +1,5 @@
 <template>
-    <div id="welcome-frame" class="col-span-3 p-7 overflow-scroll">
+    <div class="col-span-3 p-7 overflow-scroll" id="welcome-frame">
         <h1 id="title" class="text-2xl mb-5 text-center uppercase">Welcome</h1>
         <div class="flex">
             <div>
@@ -33,7 +33,7 @@
     </div>
 </template>
 <style scoped>
-#WelcomeFrame::-webkit-scrollbar {
+#Welcome-frame::-webkit-scrollbar {
     display: none;
 }
 
