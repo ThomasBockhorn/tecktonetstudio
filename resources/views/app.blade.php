@@ -8,6 +8,12 @@
 
         <link rel = "icon" type = "image/png" href = "{{ asset('favicon_symbol.png') }}">
 
+        <!-- Styles -->
+        <style>
+           body::-webkit-scrollbar{
+                display: none;
+             }
+        </style>
 
         <!-- Hamburger menu -->
         <link href="dist/hamburgers.css" rel="stylesheet">
